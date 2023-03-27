@@ -31,7 +31,7 @@ function render(theDojo) {
 //        under the adjacent (all sides and corners) squares.
 //        Use i and j as the indexes to check theDojo.
 function howMany(i, j, element) {
-    console.log(i, j );
+    console.log({ i, j });
     var sum = 0
     for (var row = i - 1; row <= i + 1 && row < theDojo.length; row++) {
 
@@ -42,7 +42,7 @@ function howMany(i, j, element) {
         }
     }
     sum -= theDojo[i][j];
-    console.log( i, j , sum);
+    console.log({ i, j }, sum);
     element.innerText = sum;
 
 

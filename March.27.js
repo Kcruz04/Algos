@@ -20,6 +20,6 @@ function arrangeCoins(n){
 }
 
 
-console.log(arrangeCoins(5)) // output: 2
+console.log(arrangeCoins(5)) // output: 2 
 console.log(arrangeCoins(8)) // output: 3
 console.log(arrangeCoins(11)) // output: 4
