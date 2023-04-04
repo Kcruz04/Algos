@@ -37,6 +37,7 @@ function generatePascalsTriangle(n) {
             }
             else{
                 row.push(result[i-1][j-1]+result[i-1][j])
+                //does this ^ mean prevois i and previouse j in that i? 
             }
         }
         result.push(row);
