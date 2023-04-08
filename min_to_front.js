@@ -28,16 +28,16 @@ const expected3 = [0, 5, 1, 2, 3, 0];
 function minToFront(nums) {
     // code here
     var min=nums[0]
-    var idx = 0
+    var minidx = 0
     for(var i=1;i<nums.length;i++){
         if( nums[i] <min){
             min=nums[i];
-            idx=i;
+            minidx=i;
             // console.log(min)
             // console.log(idx)
         }
     }
-    for(var i=idx;i>=1;i--){
+    for(var i=minidx;i>=1;i--){
         nums[i]=nums[i-1]
     }
     nums[0]=min;
@@ -46,13 +46,11 @@ function minToFront(nums) {
 
 // Tests
 const result1 = minToFront(nums1);
-console.log(result1, "should equal", expected1);
-console.log(nums1, "should equal", expected1);
+console.log("result1 should equal", expected1);
 
 const result2 = minToFront(nums2);
-console.log(result2, "should equal", expected2);
-console.log(nums2, "should equal", expected2);
+console.log("result2 should equal", expected2);
 
 const result3 = minToFront(nums3);
-console.log(result3, "should equal", expected3);
-console.log(nums3, "should equal", expected3);
+console.log("result3 should equal", expected3);
+
